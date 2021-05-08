@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.carousel__image {
+  width: 350px;
+  height: 350px;
+  margin: 20px;
+  border-radius: 20%;
+  overflow: hidden;
+}
+
+.carousel__image img {
+  display: none;
+}
+
+.carousel__image img.active {
+  display: block;
+}
+
+.carousel__button {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: 700;
+  color: #ccc;
+  cursor: pointer;
+}
